@@ -1,24 +1,51 @@
 <html>
 
 <head>
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-        crossorigin="anonymous"></script>
-    <script src="js/app.js"></script>    
+    <script
+  src="https://code.jquery.com/jquery-1.12.4.min.js"
+  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+  crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
 </head>
 
 <body>
     <h1>Ajax example using jQuery(3.0)</h1>
     <p>
-        From the below form we will enter an Id then info about the id will be displayed by ajax call. If no id is given then all data will be fetched and displayed
+        From the below form we will enter an Id then info about the id will be displayed by ajax call. If no id is given then all
+        data will be fetched and displayed
     </p>
     <p>
-        api used <b>http://jsonplaceholder.typicode.com/todos/</b>
+        api used
+        <b>http://jsonplaceholder.typicode.com/todos/</b>
     </p>
     <form>
         <label>Enter the id or leave blank for all, then click search</label>
         <input type="text" id="txt_id">
         <button id="btn_search">Search</button>
     </form>
+    <div>
+        <h4>Following is the result</h4>
+    </div>
+    <div id="singleData" style="display: none">
+
+    </div>
+    <table id="multipleData" style="display: none; border: 1px solid black">
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>user id</th>
+                <th>title</th>
+                <th>completed</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+    <div>
+        <button id="btn_previous">Previous</button>
+        <button id="btn_next">Next</button>
+    </div>
 </body>
 
 </html>
